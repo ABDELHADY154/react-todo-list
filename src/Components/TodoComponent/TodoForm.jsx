@@ -33,12 +33,14 @@ export default class TodoForm extends Component {
             placeholder="First name"
             name="task"
             onChange={this.changeHandler}
+            required
           />
         </div>
         <div className="col-md-2">
           {this.state.task ? (
             <button
               type="submit"
+              id="button"
               className="btn btn-primary"
               onClick={() => {
                 this.submit();
@@ -51,6 +53,7 @@ export default class TodoForm extends Component {
           ) : (
             <button
               type="submit"
+              id="button"
               className="btn btn-primary"
               onClick={() => {
                 this.submit();

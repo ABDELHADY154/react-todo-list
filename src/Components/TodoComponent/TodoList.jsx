@@ -3,8 +3,8 @@ import TodoItem from "./TodoItem";
 import TodoForm from "./TodoForm";
 
 export default class TodoList extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       tasks: [],
     };

@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import "../Components/App.css";
+import Todo from "./TodoComponent/Todo";
 
 export default class App extends Component {
   constructor(props) {
@@ -7,8 +9,12 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="container-fluid align-center justify-content-center">
-        <div className="container">Todo - List</div>
+      <div className="container">
+        <div className=" App">
+          <div className="App-header">
+            <Todo />
+          </div>
+        </div>
       </div>
     );
   }
